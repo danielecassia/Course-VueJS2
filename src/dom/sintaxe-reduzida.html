@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+   <p> {{ cont }} </p>
+   <button @click="somar">SOMAR</button>
+   <hr>
+   <input type="text" :value="cont">
+</div>
+
+<script>
+    new Vue({
+        el:'#app',
+        data: {
+            cont: '0'
+        },
+        methods: {
+            somar(){
+                this.cont ++
+            }
+        }
+    })
+</script>
